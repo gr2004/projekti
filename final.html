@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   <!DOCTYPE html>
 <html lang="sq">
 <head>
@@ -363,3 +364,370 @@
   </script>
 </body>
 </html>
+=======
+  <!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blockchain në Shqipëri</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --color-primary: #0d3b66;
+      --color-secondary: #1985a1;
+      --color-accent1: #f4d35e;
+      --color-accent2: #52b69a;
+      --color-bg: #e0fbfc;
+      --color-text-dark: #14213d;
+      --color-text-light: #ffffff;
+      --shadow-light: rgba(25, 133, 161, 0.3);
+      --shadow-dark: rgba(20, 33, 61, 0.15);
+      --font-sans: 'Poppins', 'Segoe UI', Tahoma, sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: var(--font-sans);
+      background: var(--color-bg);
+      color: var(--color-text-dark);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header.hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      padding: 50px 60px;
+      color: var(--color-text-light);
+      box-shadow: 0 6px 20px var(--shadow-light);
+      border-radius: 0 0 50px 50px;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    header.hero img {
+      width: 400px;
+      height: 400px;
+      max-width: 100%;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px var(--shadow-dark);
+      flex-shrink: 0;
+      filter: drop-shadow(0 4px 5px rgba(0,0,0,0.15));
+      transition: transform 0.4s ease;
+    }
+
+    header.hero img:hover {
+      transform: scale(1.05) rotate(2deg);
+    }
+
+    header.hero .hero-text {
+      flex: 1;
+      margin-left: 60px;
+      max-width: 600px;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.25);
+    }
+
+    header.hero .hero-text h1 {
+      font-weight: 800;
+      font-size: 4.5rem;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, var(--color-accent2), var(--color-accent1));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      white-space: pre-line;
+    }
+
+    header.hero .hero-text p {
+      font-size: 1.3rem;
+      font-weight: 600;
+      max-width: 520px;
+      color: var(--color-accent1);
+      letter-spacing: 0.02em;
+      text-shadow: 0 0 4px rgba(0,0,0,0.12);
+      cursor: default;
+    }
+
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 70px auto 100px;
+      padding: 0 20px;
+    }
+
+    section {
+      background: var(--color-text-light);
+      border-radius: 20px;
+      box-shadow: 0 15px 40px var(--shadow-dark);
+      padding: 35px 50px;
+      margin-bottom: 50px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-left: 8px solid var(--color-accent2);
+    }
+
+    section h2 {
+      color: var(--color-primary);
+      font-size: 2.6rem;
+      font-weight: 800;
+      margin-bottom: 25px;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: -0.02em;
+      cursor: pointer;
+    }
+
+    section p, section ul {
+      font-size: 1.15rem;
+      color: var(--color-text-dark);
+      line-height: 1.55;
+    }
+
+    section ul {
+      list-style: inside disc;
+      margin-bottom: 25px;
+    }
+
+    section ul li {
+      margin-bottom: 13px;
+      padding-left: 3px;
+    }
+
+    section:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 60px var(--shadow-dark);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: var(--color-primary);
+      color: var(--color-text-light);
+      font-weight: 700;
+      font-size: 1.1rem;
+      box-shadow: 0 -7px 14px var(--shadow-light);
+      border-radius: 60px 60px 0 0;
+      user-select: none;
+      letter-spacing: 0.03em;
+    }
+
+    @media (max-width: 960px) {
+      header.hero {
+        padding: 40px 30px;
+        justify-content: center;
+      }
+      header.hero img {
+        width: 280px;
+        margin-bottom: 35px;
+      }
+      header.hero .hero-text {
+        margin-left: 0;
+        max-width: 100%;
+        text-align: center;
+      }
+      header.hero .hero-text h1 {
+        font-size: 3.4rem;
+      }
+      main {
+        margin: 40px 15px 80px;
+        padding: 0 10px;
+      }
+      section {
+        padding: 30px 25px;
+        margin-bottom: 40px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header.hero h1 { font-size: 2.5rem; }
+      section h2 { font-size: 2rem; }
+      section p, section ul { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <img src="imagge.jpg" alt="Ilustrim Blockchain" />
+    <div class="hero-text">
+      <h1 id="typed-title"></h1>
+      <p>Zgjidhja inovative për transparencë, siguri dhe decentralizim në Shqipëri.</p>
+    </div>
+  </header>
+
+  <main>
+  <section>
+    <h2>1. Çfarë është Blockchain?</h2>
+   <p><strong></strong> Blockchain është një teknologji novatore që krijon një regjistër elektronik të shpërndarë dhe të pandryshueshëm, duke përmbushur një nevojë jetike për siguri dhe besueshmëri në epokën digjitale. Për të kuptuar më mirë konceptin, është e rëndësishme të theksojmë:
+
+<p><strong></strong>Regjistri i shpërndarë (Distributed Ledger Technology - DLT):  Informacioni ruhet në shumë nyje (kompjuterë) të shpërndara në rrjet, në mënyrë që të mos ekzistojë një pikë qendrore kontrolli, duke eliminuar rrezikun e manipulimit nga një entitet i vetëm. 
+
+<p><strong></strong>Blloqet (Blocks): Secili bllok përmban një grup të dhënash (p.sh., transaksione financiare, regjistrime pronësie, apo fakte të tjera) si dhe një vlerë kriptografike unike (hash) që lidhet me bllokun e mëparshëm, duke formuar një zinxhir të sigurt dhe të pandashëm. 
+
+<p><strong></strong>Algoritmet e konsensusit: Për të shtuar një bllok në zinxhir, pjesëmarrësit në rrjet duhet të arrijnë një marrëveshje për saktësinë e transaksioneve, përmes algoritmeve si Proof of Work, Proof of Stake, Delegated Proof of Stake, etj. 
+
+<p><strong></strong>Kriptografia:  Teknologjia përdor teknika të avancuara kriptografike, si hash funksionet SHA-256 dhe nënshkrimet digjitale, për të garantuar integritetin, autentikimin dhe privatësinë e të dhënave. 
+
+<p><strong></strong>Shembuj realë:   Blockchain është themeli i kriptomonedhave si Bitcoin dhe Ethereum, por gjithashtu përdoret për platforma si Hyperledger Fabric, Corda (për bizneset), dhe shumë zgjidhje në sektorët financiar, ligjor dhe administrativ. </p>
+  </section>
+
+  <section>
+    <h2>2. Cilat janë avantazhet e Blockchain?</h2>
+    <p><strong></strong> Avantazhet e blockchain nuk qëndrojnë vetëm në aspektin teknologjik, por ndikojnë fuqishëm në aspektin organizativ dhe social:
+
+ <p><strong></strong>Transparencë dhe auditueshmëri e plotë:  Çdo transaksion regjistrohet në mënyrë të hapur dhe të pandryshueshme, duke e bërë të mundur vërtetimin e çdo veprimi në çdo kohë, si në sektorin financiar ashtu edhe në administratë. 
+
+ <p><strong></strong>Siguri dhe rezistencë ndaj sulmeve kibernetike:  Decentralizimi i rrjetit e bën pothuajse të pamundur sulmin apo sulmet e “double-spending” apo të ndryshimit të të dhënave, duke përmirësuar ndjeshëm mbrojtjen kundër sulmeve. 
+
+ <p><strong></strong>Reduktim i kostove operative:   Duke eliminuar nevojën për ndërmjetës, si banka, noterë apo kompani sigurimi, shpenzimet administrative ulen ndjeshëm. 
+
+ <p><strong></strong>Automatizim përmes kontratave inteligjente:   Kontratat e koduara në blockchain ekzekutohen automatikisht kur plotësohen kushtet e përcaktuara, duke zvogëluar gabimet dhe vonesat njerëzore. 
+
+ <p><strong></strong>Qasje demokratike dhe globale:   Teknologjia mundëson pjesëmarrje nga kushdo në rrjet, pavarësisht nga vendndodhja apo statusi, duke ulur barrierat për pjesëmarrje ekonomike dhe sociale. 
+
+ <p><strong></strong>Ndikimi ekologjik:  Aktualisht disa algoritme si Proof of Work konsumojnë energji të madhe, por teknologjitë më të reja si Proof of Stake po zhvillohen për të bërë blockchain më miqësor ndaj mjedisit. .</p>
+  </section>
+
+  <section>
+    <h2>3. Si funksionon Blockchain?</h2>
+    <p><strong></strong>Në mënyrë më të detajuar, funksionimi i blockchain-it përfshin:
+
+<p><strong></strong>Krijimi i një transaksioni: Një përdorues krijon një transaksion digjital (p.sh., transferim parash, regjistrim dokumenti). 
+
+<p><strong></strong>Verifikimi i transaksionit: Transaksioni transmetohet në rrjet dhe verifikohet nga nyjet (nodes) për të kontrolluar vlefshmërinë e tij. 
+
+<p><strong></strong>Formimi i bllokut: Transaksionet e vlefshme grumbullohen në një bllok të ri që duhet të plotësojë kushtet e algoritmit të konsensusit. 
+
+<p><strong></strong>Algoritmi i konsensusit:Kjo është mënyra se si rrjeti vendos se cili bllok do të shtohet në zinxhir, duke përdorur algoritme të ndryshme si Proof of Work (ku minatorët garojnë për zgjidhjen e një problemi matematikor), ose Proof of Stake (ku privilegjohet kush zotëron më shumë kriptomonedha). 
+
+<p><strong></strong>Shtimi në zinxhir: Blloku i sapo verifikuar lidhet me bllokun e mëparshëm nëpërmjet hash-it dhe shpërndahet në të gjithë rrjetin. 
+
+<p><strong></strong>Kontratat inteligjente: Kodet automatizojnë marrëveshjet dhe proceset, duke eliminuar ndërmjetësit dhe duke përmirësuar shpejtësinë dhe besueshmërinë.  </p>
+  </section>
+
+  <section>
+    <h2>4. Pse Blockchain është i duhuri për Shqipërinë?</h2>
+    <p><strong></strong> Për Shqipërinë, teknologjia blockchain paraqet një mundësi unike për modernizim dhe reformë në sektorët ku besimi dhe efikasiteti janë të dobët:
+
+ <p><strong></strong>Lufta kundër korrupsionit:Me regjistra të decentralizuar dhe të paprekshëm, blockchain mund të reduktojë në mënyrë drastike hapësirat për korrupsion në prokurime publike, tendera dhe menaxhim fondesh. 
+
+ <p><strong></strong>Rritja e besimit në institucionet publike: Qytetarët do të kenë akses transparent dhe të verifikueshëm në të gjitha proceset, nga votimi deri te përdorimi i fondeve publike. 
+
+ <p><strong></strong>Modernizimi i administratës publike: Integrimi i blockchain-it mund të përmirësojë regjistrat civilë, të pronave dhe regjistrimet tatimore, duke siguruar përditësim të shpejtë dhe pa gabime. 
+
+ <p><strong></strong>Fuqizimi i demokracisë: Sistemet e votimit elektronik me blockchain do të garantojnë proces të drejtë, të verifikueshëm dhe të pa manipulueshëm. 
+
+ <p><strong></strong>Ndihma për sektorët privat dhe publik: Blockchain do të lehtësojë bizneset e vogla dhe të mesme për t’u integruar në tregjet ndërkombëtare përmes sistemit të pagesave digjitale dhe kontratave inteligjente.</p>
+  </section>
+
+  <section>
+    <h2>5. Ku mund të përdoret konkretisht Blockchain në Shqipëri?</h2>
+    <p><strong></strong> Disa aplikime specifike me impakt të menjëhershëm janë:
+
+  <p><strong></strong></p> Votimi elektronik:Përmirësimi i proceseve zgjedhore përmes një platforme të sigurt, që ruan privatësinë e votuesit dhe verifikon çdo votë në mënyrë transparente.
+
+  <p><strong></strong></p>  Regjistrimi i pronave: Ndërtimi i një regjistri kombëtar pronash në blockchain, që eliminon mashtrimet dhe konfliktet ligjore mbi pronësinë.
+
+<p><strong></strong></p>Shëndetësia digjitale:Ruajtja e të dhënave mjekësore në blockchain për të garantuar privatësinë, ndërveprueshmërinë dhe sigurimin e shpejtë të informacioneve në raste emergjente.
+
+<p><strong></strong></p>Buxheti publik dhe prokurimet: Transparenca e plotë në të gjitha shpenzimet dhe kontratat shtetërore përmes regjistrave të hapur blockchain.
+
+<p><strong></strong></p>Arsimi dhe certifikatat:Verifikimi i diplomave dhe certifikatave përmes blockchain për të luftuar falsifikimet dhe për të rritur besueshmërinë e institucioneve arsimore.
+
+<p><strong></strong></p>Menaxhimi i zinxhirit të furnizimit: Monitorimi i produktit nga origjina në konsumator duke siguruar cilësinë dhe origjinën e produkteve, veçanërisht në sektorët e ushqimit dhe industrisë farmaceutike.
+  </section>
+</main>
+
+
+  <footer>
+    © 2025 – Prezantim për Teknologjinë Blockchain në Shqipëri
+  </footer>
+
+  <script>
+    // Scroll animation
+    document.querySelectorAll('section').forEach(sec => {
+      sec.style.opacity = 0;
+      sec.style.transform = "translateY(40px)";
+    });
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.transition = "all 0.8s ease-out";
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = "translateY(0)";
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('section').forEach(sec => observer.observe(sec));
+
+    // Modal info
+    document.querySelectorAll('section h2').forEach(h2 => {
+      h2.addEventListener('click', () => {
+        alert(`Më shumë informacion për: ${h2.innerText}`);
+      });
+    });
+
+    // Dark Mode
+    const toggle = document.createElement('button');
+    toggle.textContent = "🌙 Ndrysho Ngjyrat";
+    Object.assign(toggle.style, {
+      position: "fixed", top: "20px", right: "20px",
+      padding: "10px 15px", zIndex: 1000,
+      background: "#333", color: "#fff",
+      border: "none", borderRadius: "10px", cursor: "pointer"
+    });
+    document.body.appendChild(toggle);
+
+    function setDarkMode(on) {
+      if (on) {
+        document.body.style.background = "#1e1e1e";
+        document.body.style.color = "#f0f0f0";
+        document.querySelectorAll('section').forEach(s => {
+          s.style.background = "#2c2c2c";
+          s.style.color = "#f0f0f0";
+        });
+        document.querySelectorAll('section h2, section p, section li').forEach(el => {
+          el.style.color = "#f0f0f0";
+        });
+        document.querySelector('footer').style.color = "#f0f0f0";
+        localStorage.setItem("darkMode", "on");
+      } else {
+        document.body.style.background = "var(--color-bg)";
+        document.body.style.color = "var(--color-text-dark)";
+        document.querySelectorAll('section').forEach(s => {
+          s.style.background = "var(--color-text-light)";
+          s.style.color = "var(--color-text-dark)";
+        });
+        document.querySelectorAll('section h2, section p, section li').forEach(el => {
+          el.style.color = "var(--color-text-dark)";
+        });
+        document.querySelector('footer').style.color = "var(--color-text-light)";
+        localStorage.setItem("darkMode", "off");
+      }
+    }
+
+    toggle.addEventListener('click', () => {
+      const current = localStorage.getItem("darkMode") === "on";
+      setDarkMode(!current);
+    });
+
+    if (localStorage.getItem("darkMode") === "on") setDarkMode(true);
+
+    // Typing effect për titull me dy rreshta
+    const title = document.getElementById("typed-title");
+    const text = "Teknologjia\nBlockchain";
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        title.textContent += text.charAt(i);
+        i++;
+        setTimeout(type, 80);
+      }
+    }
+    type();
+  </script>
+</body>
+</html>
+>>>>>>> ee4725584e74be7f58ff772c63730a39d7d857a7
